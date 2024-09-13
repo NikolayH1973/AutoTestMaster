@@ -1,6 +1,7 @@
 package workflows;
 
 import extensions.UIActions;
+import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedCondition;
 import pageObjects.Phptravels.NavbarSupportedContend;
 import utilities.CommonOps;
@@ -58,10 +59,17 @@ public class WebFlows extends CommonOps {
     public static void SelectLoginType(String type){
         UIActions.click(NavBar.SignType(type));
     }
+
 // select user language
   public static String UserLang(){
         return
         UIActions.SelectedText(NavBar.SiteLang);
+  }
+
+  public static void  SiteLogin (String email,String pass){
+        UIActions.updatetext(UserLoginPage.txt_email,email);
+        UIActions.updatetext(UserLoginPage.txt_password, pass);
+        UIActions.click(UserLoginPage.LoginButton);
   }
 
 }

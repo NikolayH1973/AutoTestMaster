@@ -3,6 +3,7 @@ package extensions;
 import com.google.common.util.concurrent.Uninterruptibles;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.PageFactory;
 import utilities.CommonOps;
 
 import java.util.List;
@@ -42,11 +43,10 @@ public  class UIActions extends CommonOps {
          MainPage.FlightsFrom.get(i).click();
 
  }
-// this function returns Language that user selected
+// this function returns text that user selected in list
     public static String SelectedText (WebElement element) {
      return   element.getText();
     }
-
 
   }
 

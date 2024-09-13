@@ -67,5 +67,17 @@ public class HappyFlows extends CommonOps {
         ///  WebFlows.ClickHomeLogo();
         WebFlows.ClickOnTripMenu();
     }
-
+    @Test
+    public void Test03_Login(){
+        WebFlows.ClickOnLanguageTab();
+     //   WebFlows.selectLanguage("English");
+        WebFlows.ClickOnAccountBox();
+        if (WebFlows.UserLang().equalsIgnoreCase("ENGLISH")) {
+            WebFlows.SelectLoginType("Login ");
+            WebFlows.SiteLogin("Niko.discount@gmail.com","Aa#11122233344");
+        } else if (WebFlows.UserLang().equalsIgnoreCase("RUSSIAN")) {
+            WebFlows.SelectLoginType("Войти ");
+            WebFlows.SiteLogin("Niko.discount@gmail.com","Aa#11122233344");
+        }
+    }
 }
