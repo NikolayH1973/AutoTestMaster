@@ -36,7 +36,9 @@ public class NavbarSupportedContend extends Base {
     public WebElement SignType(String SignType){
         return driver.findElement(By.xpath("//strong[text()='SignType']".replace("SignType",SignType)));
     }
-
+// This element displays that language was be selected by user
+@FindBy(xpath = "//a[@class='nav-link dropdown-toggle btn ps-3 p-0 py-2 px-0 text-center d-flex align-items-center justify-content-center gap-0 border waves-effect']/strong")
+    public WebElement SiteLang;
 
     /// //ul[@class='dropdown-menu bg-white rounded-3 p-2 show']/li/a/small/strong
 }

@@ -54,7 +54,14 @@ public static  void updateLanguage(List<WebElement> element ,int i){
          MainPage.FlightsFrom.get(i).click();
 
  }
+// this function returns Language that user selected
+
+    public static String SelectedText (WebElement element) {
+     return   element.getText();
+    }
 
 
- }
+  }
+
+
 

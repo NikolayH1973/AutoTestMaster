@@ -62,4 +62,11 @@ public class WebFlows extends CommonOps {
     public static void SelectLoginType(String type){
         UIActions.click(NavBar.SignType(type));
     }
+
+  public static String UserLang(){
+        return
+        UIActions.SelectedText(NavBar.SiteLang);
+  }
+
+
 }
