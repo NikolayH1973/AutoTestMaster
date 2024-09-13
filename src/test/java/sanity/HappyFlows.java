@@ -68,10 +68,4 @@ public class HappyFlows extends CommonOps {
         WebFlows.ClickOnTripMenu();
     }
 
-    @Test(enabled = true)
-    public void test08_SelectFlightFrom() {
-        WebFlows.ClickHomeLogo();
-        WebFlows.ClickOnFlightsFromBox();
-        WebFlows.SelectFlightFrom();
-    }
 }

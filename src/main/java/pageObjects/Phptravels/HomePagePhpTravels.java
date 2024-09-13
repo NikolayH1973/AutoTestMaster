@@ -12,9 +12,9 @@ public class HomePagePhpTravels extends Base {
     @FindBy(xpath = "//li[@class='nav-item']/button/span")
     public List<WebElement>TripNavigationMenu;
 
-
- @FindBy(xpath ="//div[@class='most--popular-from']/div/div/div/small[@class='d-inline-block overflow-hidden airport--name" )
-    public List<WebElement>FlightingFromList;
+// Aviation company in Flight from
+// @FindBy(xpath ="//div[@class='most--popular-from']/div/div/div/small[@class='d-inline-block overflow-hidden airport--name" )
+//    public List<WebElement>FlightingFromList;
 
     @FindBy(xpath ="//button[@class='btn btn-outline-primary btn-sm mx-0']" )
     public List<WebElement> FlightsFrom;

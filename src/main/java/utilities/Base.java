@@ -12,6 +12,4 @@ public class    Base {
     protected static HomePagePhpTravels MainPage;
     protected static EnglishLoginPage EnglishLogin;
     protected static NavbarSupportedContend NavBar;
-   // protected static pageObjects.Phptravels.NavbarSupportedContend NavBar;
-
 }
