@@ -8,7 +8,7 @@ import utilities.CommonOps;
 import workflows.WebFlows;
 
 public class TestsScenarios extends CommonOps {
-    String UserLang = "Russian"; //"English Russian;
+    String UserLang = "English"; //"English Russian;
 
 
     @Test (enabled = true)// Passed

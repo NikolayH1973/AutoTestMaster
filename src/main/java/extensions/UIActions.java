@@ -4,6 +4,8 @@ import com.google.common.util.concurrent.Uninterruptibles;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.ExpectedCondition;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import utilities.CommonOps;
 
 import java.util.List;
@@ -13,6 +15,7 @@ public  class UIActions extends CommonOps {
 
     // click on element on the page
     public static void click(WebElement element) {
+     wait.until(ExpectedConditions.elementToBeClickable(element));
         element.click();
         Uninterruptibles.sleepUninterruptibly(2,TimeUnit.SECONDS);
     }
