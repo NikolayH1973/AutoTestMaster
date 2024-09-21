@@ -16,9 +16,9 @@ public class NavbarSupportedContend extends Base {
     @FindBy(xpath = "//ul[@class='header_menu navbar-nav']/li/a")
     public List<WebElement> LeftMenuItems;
 
-    @FindBy(xpath = "//div[@class='nav-item--right']/ul/li/a/strong[contains(text(), 'English')]")
+    @FindBy(xpath = "//strong[@class='h6 m-0 header_options text-dark']")
     public WebElement LanguageTab;
-
+////div[@class='nav-item--right']/ul/li/a/strong[contains(text(), 'English')]
     public WebElement langElement(String lang){
         return driver.findElement(By.xpath("//span[text()='LangSelect']".replace("LangSelect",lang)));
     }

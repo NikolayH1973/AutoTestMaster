@@ -30,6 +30,7 @@ public class CommonOps extends Base {
             throw new RuntimeException("Invalide Brawser type");
 
         driver.manage().window().maximize();
+
         driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
         wait = new WebDriverWait(driver,5);
         driver.get("https://www.phptravels.net/");

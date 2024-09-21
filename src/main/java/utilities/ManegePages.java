@@ -9,6 +9,6 @@ public class ManegePages extends Base {
         MainPage = PageFactory.initElements(driver, HomePagePhpTravels.class);
         NavBar = PageFactory.initElements(driver, pageObjects.Phptravels.NavbarSupportedContend.class);
         EnglishLogin = PageFactory.initElements(driver, pageObjects.Phptravels.EnglishLoginPage.class);
-
+        UserLoginPage = PageFactory.initElements(driver, pageObjects.Phptravels.LoginPage.class);
     }
 }
